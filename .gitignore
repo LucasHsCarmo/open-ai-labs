@@ -212,3 +212,6 @@ __marimo__/
 # test sound files
 *.wav
 *.mp3
+
+# database files
+*.db
