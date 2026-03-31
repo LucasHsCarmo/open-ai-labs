@@ -1,8 +1,11 @@
 from openai import OpenAI
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 client = OpenAI(
-    api_key = os.getenv("API_KEY"),
+    api_key = os.getenv("API_KEY")
 )
 
 response = client.audio.speech.create(
