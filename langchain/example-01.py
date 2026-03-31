@@ -1,11 +1,10 @@
-import os
 from langchain_openai import OpenAI, ChatOpenAI
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-client = OpenAI(
-    api_key = os.getenv("API_KEY"),
-)
-
+api_key = os.getenv("OPENAI_API_KEY")
 model = OpenAI()
 
 # response = model.invoke(
